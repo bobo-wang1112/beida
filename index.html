@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈默 | 设计师</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <header class="header">
+        <div class="header__inner">
+            <a href="#" class="logo">CM</a>
+            <nav class="nav">
+                <a href="#about" class="nav__link">关于</a>
+                <a href="#portfolio" class="nav__link">作品</a>
+                <a href="#contact" class="nav__link">联系</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="line">陈默</span>
+                    <span class="line">设计师 & 创意总监</span>
+                </h1>
+                <p class="hero__subtitle">用简约设计传递深刻理念</p>
+            </div>
+            <div class="hero__image">
+                <div class="profile-upload-container">
+                    <img id="profile-image" src="images/default-profile.jpg" alt="陈默">
+                    <label for="profile-upload" class="upload-label">更换照片</label>
+                    <input type="file" id="profile-upload" accept="image/头像.png">
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="section about">
+            <h2 class="section__title">关于我</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>我是一名专注于品牌视觉和用户体验设计的创意总监，拥有8年行业经验。我的设计理念是"少即是多"，通过极简的设计语言传达最核心的品牌价值。</p>
+                    <p>曾服务于多家国际品牌，包括Apple、Nike和Samsung等，擅长将复杂的概念转化为简洁有力的视觉表达。</p>
+                </div>
+                <div class="about__skills">
+                    <h3>专业技能</h3>
+                    <ul>
+                        <li>品牌视觉设计</li>
+                        <li>用户体验设计</li>
+                        <li>艺术指导</li>
+                        <li>创意策略</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="section portfolio">
+            <div class="portfolio__header">
+                <h2 class="section__title">精选作品</h2>
+                <button id="add-work-btn" class="add-work-btn">+ 添加作品</button>
+            </div>
+            
+            <div class="portfolio__grid" id="portfolio-grid">
+                <!-- 作品将通过JavaScript动态加载 -->
+            </div>
+            
+            <!-- 作品上传模态框 -->
+            <div id="upload-modal" class="modal">
+                <div class="modal__content">
+                    <span class="modal__close">&times;</span>
+                    <h3>上传新作品</h3>
+                    <form id="upload-form" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" id="work-title" placeholder="作品标题" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="work-category" placeholder="作品类别">
+                        </div>
+                        <div class="form-group file-upload">
+                            <label for="work-image">选择图片</label>
+                            <input type="file" id="work-image" accept="image/头像.png" required>
+                            <div class="file-name" id="file-name">未选择文件</div>
+                        </div>
+                        <button type="submit" class="upload-btn">上传作品</button>
+                    </form>
+                    <div id="upload-status"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section contact">
+            <h2 class="section__title">联系我</h2>
+            <p class="contact__text">有兴趣合作或想了解更多？</p>
+            <a href="mailto:hello@chenmo.com" class="contact__email">hello@chenmo.com</a>
+            <div class="contact__social">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Behance</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2023 陈默. 保留所有权利</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
